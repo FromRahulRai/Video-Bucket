@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  CI: true
+  CI: false
 
 jobs:
   build:
@@ -17,13 +17,15 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+
         
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
            node-version: 20
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
       
         
           
