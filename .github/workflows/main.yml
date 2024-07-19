@@ -21,6 +21,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
            node-version: 20
+      - run: npm ci
         
           
       - name: Install dependencies
