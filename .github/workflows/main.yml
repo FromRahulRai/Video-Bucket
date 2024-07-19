@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  CI: false
+  CI: true
 
 jobs:
   build:
